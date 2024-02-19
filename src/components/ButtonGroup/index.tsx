@@ -1,11 +1,9 @@
 import clsx from "clsx";
-import { Button, ButtonProps } from "./Button";
-import "./buttonGroup.css";
+import "./styles.css";
+import { Button, ButtonProps } from "../Button";
+import { ButtonGroupProps } from "./types";
 
-interface ButtonGroupProps {
-  className?: string;
-  buttons: ButtonProps[];
-}
+export type { ButtonGroupProps };
 
 export const ButtonGroup = ({
   className,

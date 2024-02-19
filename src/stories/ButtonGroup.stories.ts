@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { ButtonGroup } from "./ButtonGroup";
+import { ButtonGroup } from "../components/ButtonGroup";
 
 const meta = {
   title: "Custom/ButtonGroup",

@@ -12,7 +12,7 @@ type Story = StoryObj<typeof meta>;
 export const Custom: Story = {
   args: {
     buttons: [
-      { label: "Button 1" },
+      { label: "Button 1", primary: true },
       { label: "Button 2" },
       { label: "Button 3" },
     ],

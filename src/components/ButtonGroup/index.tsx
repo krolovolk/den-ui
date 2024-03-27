@@ -1,7 +1,8 @@
 import clsx from "clsx";
 import "./styles.css";
-import { Button, ButtonProps } from "../Button";
+import { Button } from "../Button";
 import { ButtonGroupProps } from "./types";
+import { Container } from "./styles";
 
 export type { ButtonGroupProps };
 
@@ -11,10 +12,10 @@ export const ButtonGroup = ({
   ...props
 }: ButtonGroupProps) => {
   return (
-    <div className={clsx("ButtonGroup", className)}>
-      {buttons.map((button: ButtonProps) => (
-        <Button label={button.label}></Button>
+    <Container className={clsx("ButtonGroup", className)}>
+      {buttons.map(({ label, ...buttonProps }) => (
+        <Button label={label} {...buttonProps}></Button>
       ))}
-    </div>
+    </Container>
   );
 };
